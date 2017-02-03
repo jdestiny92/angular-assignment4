@@ -1,0 +1,11 @@
+<ul>
+  <li ng-repeat="item in $ctrl.items" style="margin-bottom: 2%; width: 30%; border: 2px solid black;">
+    	<ul>
+    		<li>{{item.id}}</li>
+    		<li>{{item.short_name}}</li>
+    		<li>{{item.name}}</li>
+    		<li>{{item.special_instructions}}</li>
+    		<li style="margin-top: 1%;"><a ui-sref="items({category:item.short_name})">Select this category</a></li>
+    	</ul>
+  </li>
+</ul>
